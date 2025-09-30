@@ -15,9 +15,17 @@
         data.map((items, index) => {
           let heading = document.createElement("h1");
           let type = document.createElement("h4");
+          let avatar = document.createElement("img");
+
+          //   import user login
           document.body.appendChild(heading);
           heading.innerText = items.login;
 
+          //   import user avatar
+          document.body.appendChild(avatar);
+          avatar.src = items.avatar_url;
+
+          //   import type of user
           document.body.appendChild(type);
           type.innerText = items.type;
         });
